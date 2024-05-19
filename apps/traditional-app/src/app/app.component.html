@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="page-header">
+    <div class="page-title-container">
+      <h2>Signal Todo List</h2>
+      <app-todo-summary [todoSummary]="$any(todoSummary$ | async)"></app-todo-summary>
+    </div>
+    <div class="page-action-container">
+      <app-filter-completed-toggle [(filterCompleted)]="filterCompleted"></app-filter-completed-toggle>
+      <app-create-todo-action (createdTodo)="onTodoCreated()"></app-create-todo-action>
+    </div>
+  </div>
+  <app-todo-list
+    [filterCompleted]="filterCompleted"
+    (todoSummaryChange)="onTodoSummaryChange($event)"
+  ></app-todo-list>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Create Todo</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input #titleInput="ngModel" matInput [(ngModel)]="title" required />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onCancelClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="title" [disabled]="titleInput.invalid">Create</button>
+</mat-dialog-actions>
