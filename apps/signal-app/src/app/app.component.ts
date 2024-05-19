@@ -1,6 +1,7 @@
 import { Component, effect, signal, viewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { CreateTodoActionComponent, FilterCompletedToggleComponent, TodoListComponent, TodoSummary, TodoSummaryComponent } from './todo-list';
+import { TodoSummary } from '@tsmc-it/todo/domain';
+import { CreateTodoActionComponent, FilterCompletedToggleComponent, TodoListComponent, TodoSummaryComponent } from './todo-list';
 
 @Component({
   standalone: true,

@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { TodoSummary } from '../interfaces';
+import { TodoSummary } from '@tsmc-it/todo/domain';
 
 @Component({
   selector: 'app-todo-summary',

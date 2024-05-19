@@ -2,10 +2,12 @@ import { Component, inject, output } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { CreateTodoModalComponent } from '../create-todo-modal';
 import { filter, switchMap } from 'rxjs';
+import { Todo } from '@tsmc-it/todo/domain';
+
+import { CreateTodoModalComponent } from '../create-todo-modal';
 import { TodoApiService } from '../services';
-import { Todo } from '../interfaces';
+
 
 @Component({
   selector: 'app-create-todo-action',

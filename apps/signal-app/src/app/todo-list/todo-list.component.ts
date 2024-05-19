@@ -3,11 +3,11 @@ import { toSignal, outputFromObservable, toObservable } from '@angular/core/rxjs
 import { MatListModule } from '@angular/material/list';
 import { Subject, startWith, switchMap } from 'rxjs';
 import { isEqual } from 'lodash-es';
+import { calculateTodoSummary } from '@tsmc-it/todo/domain';
 
 import { TodoApiService } from './services';
 import { FormsModule } from '@angular/forms';
 import { DisplayOptionPipe } from './pipes';
-import { calculateTodoSummary } from './functions';
 
 @Component({
   selector: 'app-todo-list',

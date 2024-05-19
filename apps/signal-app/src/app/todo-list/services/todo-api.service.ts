@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { defer, delay, map, of, throwError } from 'rxjs';
-import { CreateTodoRequest, CreateTodoResponse, GetTodosResponse, Todo, UpdateTodoResponse } from '../interfaces';
+import { Todo } from '@tsmc-it/todo/domain';
+import { CreateTodoRequest, CreateTodoResponse, GetTodosResponse, UpdateTodoResponse } from '@tsmc-it/todo/api';
 
 @Injectable({ providedIn: 'root' })
 export class TodoApiService {
