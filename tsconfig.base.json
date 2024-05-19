@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@tsmc-it/todo/api": ["libs/todo/api/src/index.ts"],
       "@tsmc-it/todo/domain": ["libs/todo/domain/src/index.ts"]
     }
   },
