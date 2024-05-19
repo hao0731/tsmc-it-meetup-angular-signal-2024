@@ -1,0 +1,11 @@
+<mat-selection-list [(ngModel)]="selectedTodoIds">
+  @for (todo of todos(); track todo.id) {
+    <mat-list-option
+      [style.display]="filterCompleted() | displayOption : todo.id : selectedTodoIds()"
+      [value]="todo.id"
+      (selectedChange)="onSelectionChange(todo.id, $event)"
+    >
+      {{ todo.title }}
+    </mat-list-option>
+  }
+</mat-selection-list>
