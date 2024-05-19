@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
@@ -18,7 +18,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   ],
 })
 export class CreateTodoModalComponent {
-  protected title = '';
+  protected readonly title = signal<string>('');
 
   private readonly dialogRef = inject<MatDialogRef<CreateTodoModalComponent>>(MatDialogRef);
 
