@@ -4,9 +4,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { filter, switchMap } from 'rxjs';
 import { Todo } from '@tsmc-it/todo/domain';
+import { TodoApiService } from '@tsmc-it/todo/api';
 
 import { CreateTodoModalComponent } from '../create-todo-modal';
-import { TodoApiService } from '../services';
 
 
 @Component({
