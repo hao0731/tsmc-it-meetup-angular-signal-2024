@@ -25,7 +25,7 @@
           "apps/signal-app/src/assets"
         ],
         "styles": [
-          "@angular/material/prebuilt-themes/purple-green.css",
+          "@angular/material/prebuilt-themes/indigo-pink.css",
           "apps/signal-app/src/styles.scss"
         ],
         "scripts": []
