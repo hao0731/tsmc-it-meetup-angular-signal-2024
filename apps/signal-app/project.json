@@ -15,9 +15,7 @@
         "outputPath": "dist/apps/signal-app",
         "index": "apps/signal-app/src/index.html",
         "browser": "apps/signal-app/src/main.ts",
-        "polyfills": [
-          "zone.js"
-        ],
+        "polyfills": [],
         "tsConfig": "apps/signal-app/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
