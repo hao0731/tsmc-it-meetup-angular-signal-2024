@@ -26,7 +26,7 @@ export class EqualSemanticsComponent {
   });
 
   protected onAddClick() {
-    this.counter.update((previous) => previous + 2);
+    this.counter.update((current) => current + 2);
   }
 
   protected onUpdateUserClick() {

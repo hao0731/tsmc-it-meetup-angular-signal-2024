@@ -31,6 +31,6 @@ export class GlitchFreeComponent {
   });
 
   protected onAddClick() {
-    this.counter.update((previous) => previous + 1);
+    this.counter.update((current) => current + 1);
   }
 }

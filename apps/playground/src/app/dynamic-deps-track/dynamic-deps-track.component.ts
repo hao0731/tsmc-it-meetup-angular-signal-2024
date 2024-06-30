@@ -23,7 +23,7 @@ export class DynamicDepsTrackComponent {
   });
 
   protected onControlSwitch() {
-    this.control.update((previous) => !previous);
+    this.control.update((current) => !current);
   }
 
   protected onText1ChangeClick() {
