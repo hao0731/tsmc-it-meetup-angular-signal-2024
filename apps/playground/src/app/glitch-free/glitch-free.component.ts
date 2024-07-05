@@ -15,9 +15,9 @@ export class GlitchFreeComponent {
     console.log('[GlitchFreeComponent][isEven]', 'computed');
     return this.counter() % 2 === 0;
   });
-  private readonly isOld = computed(() => {
+  private readonly isOdd = computed(() => {
     // NOTE: computed 應為 pure function，此處 console.log 只是為了展示 memoized 的效果
-    console.log('[GlitchFreeComponent][isOld]', 'computed');
+    console.log('[GlitchFreeComponent][isOdd]', 'computed');
     return !this.isEven();
   });
   private readonly sqrtCount = computed(() => {
@@ -27,7 +27,7 @@ export class GlitchFreeComponent {
   });
 
   private readonly glitchFreeLogger = effect(() => {
-    console.log('[GlitchFreeComponent][glitchFreeLogger]', this.counter(), this.isEven(), this.isOld());
+    console.log('[GlitchFreeComponent][glitchFreeLogger]', this.counter(), this.isEven(), this.isOdd());
   });
 
   protected onAddClick() {
